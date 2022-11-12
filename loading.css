@@ -4,9 +4,17 @@ main {
 
 .loadingaberto {
   overflow: hidden; }
-  @media (min-width: 990px) and (max-width: 1399px), (min-width: 1400px),(max-width: 900px) {
+  @media (min-width: 990px) and (max-width: 1399px), (min-width: 1400px) {
     .loadingaberto {
       padding-right: 15px; } }
+      @media  (max-width: 900px) {
+        .loading{
+display: none;
+
+        } 
+      .logo-loading{
+        display: none;
+      }}
   .loadingaberto main {
     overflow: hidden; }
 
