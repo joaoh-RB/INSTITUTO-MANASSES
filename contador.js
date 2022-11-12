@@ -14,7 +14,7 @@ var max = 19570;
 for (var i = min; i <= max; i++) {
   setTimeout(function(nr) {
     numero.innerHTML = nr;
-  }, i * 1 / max, i);
+  }, i * 3000 / max, i);
 }
 };
 
@@ -31,7 +31,7 @@ function numero2() {
   for (var i = min; i <= max; i++) {
     setTimeout(function(nr) {
       numero.innerHTML = nr;
-    }, i * 1 / max, i);
+    }, i * 1000 / max, i);
   }
 };
 
@@ -49,7 +49,7 @@ function numero3() {
   for (var i = min; i <= max; i++) {
     setTimeout(function(nr) {
       numero.innerHTML = nr;
-    }, i * 1 / max, i);
+    }, i * 1000 / max, i);
   }
 };
 
