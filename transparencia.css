@@ -6,7 +6,6 @@
 
 #pdf {
     max-width: 100%;
-    height: 200vh;
     padding: 70px;
 }
 
@@ -38,5 +37,8 @@
         
         height: 70%;
         width: 100%;
+    }
+    .altura{
+        height: 1000px;
     }
   }

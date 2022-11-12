@@ -155,14 +155,14 @@ text-decoration: none;
   
   @media (max-width: 450px) {
     .box {
-      height: 200px;
+      height: 210px;
     }
   }
   
   @media (max-width: 950px) and (min-width: 450px) {
     .box {
       text-align: center;
-      height: 180px;
+      height: 210px;
     }
   }
   

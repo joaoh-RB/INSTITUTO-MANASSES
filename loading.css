@@ -10,7 +10,7 @@ main {
       @media  (max-width: 900px) {
         .tudo{
           display: none;
-          overflow:auto;
+          overflow: visible;
         }}
   .loadingaberto main {
     overflow: hidden; }
