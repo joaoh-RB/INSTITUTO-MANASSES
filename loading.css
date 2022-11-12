@@ -4,7 +4,7 @@ main {
 
 .loadingaberto {
   overflow: hidden; }
-  @media (min-width: 990px) and (max-width: 1399px), (min-width: 1400px),(min-width: 300px) {
+  @media (min-width: 990px) and (max-width: 1399px), (min-width: 1400px),(max-width: 900px) {
     .loadingaberto {
       padding-right: 15px; } }
   .loadingaberto main {
