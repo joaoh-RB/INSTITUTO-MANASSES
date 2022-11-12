@@ -31,7 +31,11 @@
     width: 70%;
 }
 @media (max-width: 800px) {
+    #pdf {
+    display: none;
+    }
     .pdf_estilo {
+        
         height: 70%;
         width: 100%;
     }

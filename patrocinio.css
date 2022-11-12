@@ -47,7 +47,10 @@ img{
 input{
   display: none;
 }
+#patrocinio{
+height: auto;
 
+}
 .slides{
   width: 76%;
   height: 100%;
