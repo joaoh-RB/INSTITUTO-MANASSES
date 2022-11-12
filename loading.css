@@ -8,13 +8,9 @@ main {
     .loadingaberto {
       padding-right: 15px; } }
       @media  (max-width: 900px) {
-        .loading{
-display: none;
-
-        } 
-      .logo-loading{
-        display: none;
-      }}
+        .tudo{
+          display: none;
+        }}
   .loadingaberto main {
     overflow: hidden; }
 
