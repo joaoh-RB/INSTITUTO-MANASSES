@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-img--text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.container--projetos-estrutura article {
+    flex: 1;
+}
+
+.container--projetos-estrutura article img {
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    #minha-pica {
+        flex-direction: column-reverse;
+    }
+}

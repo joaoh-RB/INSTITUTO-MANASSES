@@ -1,0 +1,267 @@
+@import url('./palettes.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+#cabecalho {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+#cabecalho .container-header {
+    height: 75px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho .logo a {
+    text-decoration: none;
+}
+
+#cabecalho .logo .principal {
+    width: 178px;
+    height: 80px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#cabecalho .logo .secondaria {
+    width: 178px;
+    height: 80px;
+    display: none;
+}
+
+#cabecalho nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#cabecalho nav ul {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#cabecalho nav a {
+    text-decoration: none;
+    color: var(--white);
+    transition: var(--transition);
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    padding-top: 4px;
+    font-size: 12pt;
+    font-weight: 450;
+}
+
+#cabecalho nav .social-media {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+
+#cabecalho nav #contact {
+    border: none;
+    background: none;
+}
+
+#cabecalho nav #contact a {
+    padding: 6px 10px;
+    border-radius: 25px;
+    border: 1px solid white;
+    color: var(--white);
+}
+
+#cabecalho nav #menu-open, 
+#cabecalho nav #menu-close {
+    background: none;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+#cabecalho nav #menu-open i,
+#cabecalho nav #menu-close i {
+    font-size: 15pt;
+}
+
+
+/* hover */
+.facebook:hover i {
+    color: #3b5998;
+}
+.linkedin:hover i {
+    color: #2c363a;
+}
+
+
+.instagram:hover i {
+    background: linear-gradient(110deg, #405DE6, #833AB4, #C13584, #FD1D1D, #F56040);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+.circle-user:hover i {
+    color: #fbc000;
+}
+.youtube:hover i {
+    color: #c4302b;
+}
+/* hover */
+#cabecalho.active .facebook:hover i {
+    color: #3b5998;
+}
+#cabecalho.active .linkedin:hover i {
+    color: #0e76a8;
+}
+#cabecalho.active .circle-user:hover i {
+    color: #fbc000;
+}
+#cabecalho.active .instagram:hover i {
+    background: linear-gradient(110deg, #405DE6, #833AB4, #C13584, #FD1D1D, #F56040);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+#cabecalho.active .youtube:hover i {
+    color: #c4302b;
+}
+
+
+/* active */
+#cabecalho.active {
+    background-color: var(--white);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#cabecalho.active a,
+#cabecalho.active i {
+    color: var(--black);
+}
+
+#cabecalho.active nav ul li a.active {
+    border-bottom-color: var(--white);
+}
+
+#cabecalho.active .logo .principal {
+    width: 178px;
+    height: 80px;
+    display: none;
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#cabecalho.active .logo .secondaria {
+    width: 178px;
+    height: 80px;
+    display: block;
+}
+
+#cabecalho nav ul li a.active {
+    border-bottom: 1px solid var(--white);
+}
+#cabecalho.active nav #contact a {
+    padding: 6px 10px;
+    border-radius: 25px;
+    border: 1px solid rgb(0, 0, 0);
+    color: var(--black);
+}
+
+@media (max-width: 830px) {
+    #cabecalho nav #menu-open {
+        display: block;
+        position: fixed;
+        top: 25px;
+        right: 21px;
+    }
+
+    #cabecalho nav.show #menu-open {
+        display: none;
+    }
+
+    #cabecalho nav.show #menu-close {
+        display: block;
+        position: fixed;
+        top: 25px;
+        right: 21px;
+    }
+
+    #cabecalho nav {
+        width: 250px;
+        height: 100vh;
+
+        position: fixed;
+        top: 0;
+        right: -300px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+
+        background-color: white;
+        border-left: 2px solid var(--orange);
+        transition: var(--transition);
+    }
+
+    #cabecalho nav.show {
+        right: 0;
+    }
+
+    #cabecalho nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cabecalho nav .social-media {
+        position: fixed;
+        height: 60px;
+        bottom: 0;
+    }
+    
+    #cabecalho.active a {
+        color: var(--black);
+    }
+
+
+    #cabecalho.active i {
+        color: var(--black);
+    }
+
+    #cabecalho.active nav.show i {
+        color: var(--black);
+    }
+    
+    #cabecalho.active nav ul li a.active {
+        border-bottom: 1px solid var(--black);
+        color:black;
+    }
+    #cabecalho nav ul li a {
+        
+        color:black;
+    }
+    #cabecalho nav.show i {
+        color: var(--black);
+    }
+    #cabecalho nav #contact a {
+        padding: 6px 10px;
+        border-radius: 25px;
+        border: 1px solid rgb(0, 0, 0);
+        color: var(--black);
+    }
+    
+}

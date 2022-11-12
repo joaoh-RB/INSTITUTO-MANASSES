@@ -1,0 +1,125 @@
+@import url('./varibles.css');
+
+#projetos {
+    padding-top: 80px;
+}
+
+#projetos .container-projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#projetos .container-projetos button {
+    border: none;
+    background: none;
+    outline: none;
+    width: 150px;
+}
+
+#projetos .container-projetos button a {
+    display: block;
+
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    
+    border: 1px solid rgb(0, 0, 0);
+    color: var(--black);
+
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 11pt;
+    font-weight: 500;
+}
+
+#projetos h2 {
+    display: inline-block;
+    background-color: var(--gray);
+    text-transform: uppercase;
+    font-size: 13pt;
+    font-weight: 600;
+    padding: 15px;
+
+}
+
+#projetos .container-projetos-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+#projetos .container-projetos-cards .projetos-card {
+    flex: 1 1 230px;
+    max-height: auto;
+    min-height: 300px;
+    max-width: 280px;
+    background-color: var(--gray);
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#projetos .container-projetos-cards .projetos-card .projetos-image {
+    width: 100px;
+    height: 100px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    padding: 10px;
+}
+.container-img--text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 40px;
+}
+#projetos .container-projetos-cards .projetos-card .projetos-title h4 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: .7rem 0;
+    font-weight: 700;
+    font-size: 12pt;
+}
+
+#projetos .container-projetos-cards .projetos-card .projetos-content p {
+    text-align: center;
+    font-size: 10pt;
+}
+
+#projetos .container-projetos-cards .projetos-card .projetos-button {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 5px 0;
+}
+
+#projetos .container-projetos-cards .projetos-card .projetos-button a {
+    display: inline-block;
+    padding: 3px 10px;
+    color: var(--black);
+    transition: var(--transition);
+}
+
+#projetos .container-projetos-cards .projetos-card .projetos-button a:hover {
+    opacity: .8;
+}
+
+#titulo_projetos{
+    display: inline-block;
+    background-color: var(--gray);
+    text-transform: uppercase;
+    font-size: 13pt;
+    font-weight: 600;
+    padding: 15px;
+}
+.paragraf{
+    padding-top: 10px;
+    padding-right: 10px;
+}

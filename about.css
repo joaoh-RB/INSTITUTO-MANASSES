@@ -1,0 +1,54 @@
+@import url('./varibles.css');
+
+#sobre .container-sobre {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 80px;
+}
+
+#sobre .container-sobre article {
+    flex: 1 1 300px;
+    max-width: 100%;
+    position: relative;
+}
+
+#sobre .container-sobre .text-sobre h2 {
+    margin-bottom: 1.5rem;
+}
+
+#sobre .container-sobre .text-sobre p {
+    line-height: 25px;
+    text-align: justify;
+}
+
+#sobre .container-sobre .text-sobre a {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: var(--black);
+}
+
+#sobre .container-sobre .image-sobre img {
+    border-radius: 20px;
+}
+
+#sobre .container-sobre .image-sobre .fixed-image-sobre {
+    width: 90%;
+    height: 350px;
+}
+.saiba {
+    padding: 6px 10px;
+    border-radius: 25px;
+    border: 1px solid white;
+    color: rgba(51, 51, 51, 0);
+}
+#sobre .container-sobre .image-sobre .float-image-sobre {
+    position: absolute;
+    width: 135px;
+    height: 150px;
+    top: -20px;
+    right: 0px;
+}

@@ -1,0 +1,95 @@
+@import url('./varibles.css');
+
+footer {
+    margin-top: -30px;
+    width: 100%;
+    background-color:#222;
+}
+
+footer .container-rodape {
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+footer .social-media-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-media-rodape .media {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+footer h4 {
+    color: var(--white);
+    font-size: 14pt;
+    margin-bottom: 1rem;
+}
+
+footer .social-media-rodape a i {
+    color: var(--white);
+    font-size: 18pt;
+}
+
+footer .know-us-rodape nav ul {
+    list-style: none;
+}
+
+footer .know-us-rodape nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: .5rem;
+    color: var(--white);
+}
+
+footer .know-us-rodape nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .logo-rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .logo-rodape img {
+    width: 150px;
+}
+
+footer .copyright-rodape {
+    color: var(--white);
+    width: 100%;
+    font-size: 10pt;
+    margin-left: auto;
+    margin-right: auto; 
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .container-copyright-rodape {
+    min-height: 30px;
+    max-height: auto;
+    
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+@media (max-width: 700px) {
+    footer .container-rodape {
+        justify-content: center;
+    }
+    footer .know-us-rodape{
+        display: none;
+    }
+}
